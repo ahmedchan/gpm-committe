@@ -1,0 +1,1 @@
+!function(t){t.widget("ui.timespinner",t.ui.spinner,{options:{step:60,page:60,format:"HH:mm"},_parse:function(t){return"string"==typeof t?Number(t)==t?Number(t):moment.utc(t,this.options.format).unix():t},_format:function(t){return moment.unix(t).utc().format(this.options.format)}})}(jQuery);

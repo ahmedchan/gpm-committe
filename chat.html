@@ -1,0 +1,1014 @@
+<!doctype html>
+<html class="no-js root" lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> المحادثات </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="icon.png">
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function(e, t, n) {
+            var r = e.querySelectorAll("html")[0];
+            r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+        })(document, window, 0);
+
+        var doc = document.getElementsByTagName('html')[0];
+        var links = document.getElementsByTagName('link')[0];
+        var theme = localStorage.getItem('theme');
+        var lang = localStorage.getItem('lang');
+
+        if (theme !== null) {
+            doc.classList.add(theme);
+        } else if (theme === null) {
+            doc.classList.add('root');
+        }
+
+        if (lang === null || lang == 'ar') {
+            doc.setAttribute('dir', 'rtl');
+            links.setAttribute('href', 'css/style-rtl.css');
+        } else if (lang === 'en') {
+            doc.setAttribute('dir', 'ltr');
+            links.setAttribute('href', 'css/style.css');
+        }
+    </script>
+	
+</head>
+<body>
+
+	<div class="page-wrapper">
+		
+			<header class="header legan">
+	<div class="top-header">
+		<div class="container-fluid">
+			<div class="logo">
+			</div>
+		</div>
+	</div>
+
+	<div class="main-nav">
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="maham.html"> المهام </a>
+						<span class="nav-link-notify">4</span>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="leggan.html">اللجان</a></li>
+					<li class="nav-item"><a class="nav-link" href="meetings.html">الاجتماعات</a></li>
+					<li class="nav-item"><a class="nav-link" href="morasalat.html">المراسلات</a></li>
+					<li class="nav-item"><a class="nav-link" href="reports.html">التقارير</a></li>
+					<li class="nav-item show-list"><a class="nav-link" href="#">الادارة<i
+								class="fas fa-sort-down mr-2"></i></a>
+						<ul class="showw-list list-unstyled px-0">
+							<li class="show-files3">
+								<a class="d-block py-2" href="">الملفات<i
+										class="fas fa-sort-down mr-2"></i></a>
+								<!-- files list -->
+								<ul class="showw-files list-unstyled px-0">
+									<li>
+										<a class="d-block py-2" href="all_files.html"><i
+												class="fas fa-caret-right ml-2"></i>جميع الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="template_files.html"><i
+												class="fas fa-caret-right ml-2"></i>قوالب
+											الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="index_files.html"><i
+												class="fas fa-caret-right ml-2"></i>فهرس
+											الملفات
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="_files.html"><i
+												class="fas fa-caret-right ml-2"></i>المجلدات</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="show-privilage">
+								<a class="py-2" href="">الصلاحيات<i class="fas fa-sort-down mr-2"></i></a>
+								<!-- privilage list -->
+								<ul class="showw-privilage list-unstyled px-0">
+									<li>
+										<a class="d-block py-2" href="groups.html"><i
+												class="fas fa-caret-right ml-2"></i>المجموعات</a>
+									</li>
+									<li>
+										<a class="py-2" href="privilages.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات المجموعة</a>
+									</li>
+									<li>
+										<a class="py-2" href="users_privilage.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات الادوار
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="users_roles.html"><i
+												class="fas fa-caret-right ml-2"></i>ادوار المستخدمين
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="object-privilige.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات المستخدمين</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات مستخدمين الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages_index.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات فهرس الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages_group.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات ملفات المجموعة</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="py-2" href="members.html"><i
+										class="fas fa-caret-right ml-2"></i>الاعضاء</a>
+							</li>
+							<li>
+								<a class="py-2" href="gehat.html"><i
+										class="fas fa-caret-right ml-2"></i>الجهات</a>
+							</li>
+							<li>
+								<a class="py-2" href="holidays.html"><i
+										class="fas fa-caret-right ml-2"></i>العطلات
+									الرسمية</a>
+							</li>
+							<li>
+								<a class="py-2" href="lockups.html"><i
+										class="fas fa-caret-right ml-2"></i>اكواد النظام</a>
+							</li>
+							<li>
+								<a class="py-2" href="locations.html">
+									<i class="fas fa-caret-right ml-2"></i>المقرات</a>
+							</li>
+							<li>
+								<a class="py-2" href="notifications.html"><i
+										class="fas fa-caret-right ml-2"></i>الاشعارات</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="calendar.html">التقويم</a></li>
+					<li class="nav-item"><a class="nav-link" href="delegate.html">التفويضات</a></li>
+				</ul>
+
+				<div style="display:flex;align-items:center;" class="settings">
+					<form class="mlxs">
+						<button class="btn bg-transparent py-1" id="changeToLight">
+							<img src="images/icons/Light_mood_moon.png" alt="">
+						</button>
+						<button class="btn bg-transparent py-1" id="changeToDark">
+							<img src="images/icons/Dark_mood_sun.png" alt="">
+						</button>
+					</form>
+
+					<div class="noti_Container mlxs" id="noti_Container">
+						<a href="javascript:void(0);" id="noti_Button" class="noti_Button"><i
+								class="fas fa-bell"></i></a>
+						<span id="noti_Counter" class="noti_Counter">7</span>
+						<!--THE NOTIFICAIONS DROPDOWN BOX.-->
+						<div id="notifications" class="notifications">
+							<h3>اخر الإشعارات</h3>
+							<div style="height:300px;" class="notifications-body scroll">
+								<ol class="list">
+									<li>
+										<div>
+											<div><span class="text-primary">تحديث</span> إنتقال لمرحلة جديدة
+											</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+								</ol>
+							</div>
+							<div class="seeAll"><a href="#">شاهد الكُل</a></div>
+						</div>
+					</div>
+
+					<form class="mlxs">
+						<button id="arabicLang">AR</button>
+						<button id="englishLang">EN</button>
+					</form>
+
+					<div class="today">
+						<span id="hijri"></span> /
+						<span id="meladi"></span>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+		
+
+		<section class="account-strip">
+    <div class="overlay">
+        <div class="container-fluid clearfix">
+            <div class="user-account">
+                مرحباً: أحمد - <a class="link" href="#">تسجيل الخروج</a>
+            </div>
+            <div class="global-search">
+                <input type="search" name="" class="search_input" placeholder="ابحث هنا...">
+                <a class="search-link"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+</section> 
+		
+
+<div class="main-content " id="mainContent">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">chat</button>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                   <div class="row mx-0">
+                    <div class="chatContainer col-12">
+                        <div class="upperSide d-flex border-bottom border-2">
+                            <div class="chatEntities d-flex justify-between align-center">
+                                <p class="text-primary text-large">المحادثة</p>
+                                <div class="d-flex">
+                                    <p class="mllg hint-big">
+                                        <i class="fas fa-file ml-1"></i> الملفات
+
+                                    </p>
+                                    <p class="mllg hint-big">
+                                        <i class="far fa-image ml-1"></i> الصور
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mx-0">
+                                <div class="chatContnet plmd scroll bordered pr-3 col-lg-9 col-md-8">
+    
+                                </div>
+    
+                                <div class="col-lg-3 col-md-4 border-right d-none d-md-block">
+                                        <div class="text-left">
+                                            <p class="text-large">الحاضرين</p>
+                                        </div>
+    
+                                        <div class="teamEntities">
+                                            
+                                        </div>
+                                </div>
+                        </div>
+
+                    </div>
+                   </div>
+                </div>
+
+                <!-- <div class="modal-footer d-flex justify-content-end">
+                    <button type="button" class="btn btn-wide btn-primary" data-dismiss="modal">اغلاق الشات</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var data = {
+        "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ameeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj%40thread.v2')/messages",
+        "@odata.count": 13,
+        "@odata.nextLink": "https://graph.microsoft.com/v1.0/chats/19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2/messages?$skiptoken=M2U0NTAwMDAwMDMxMzkzYTZkNjU2NTc0Njk2ZTY3NWY0ZjQ0NGQzMTU5NTc0ZDc5NWE1NzU5NzQ1OTdhNjc3ODVhNjkzMDMwNTk1NzQ2NmQ0YzU3NDkzMDRlMzI0NTc0NGU1NzU5MzQ0ZDU0NTUzNDRkN2E1NTM1NGQ0NDY4NmE0MDc0Njg3MjY1NjE2NDJlNzYzMjAxNDgyYjc3YTg3OTAxMDAwMGFmMTY0YmY2NzkwMTAwMDB8MTYyMzMzNDc4NjczNQ%3d%3d",
+        "value": [{
+            "id": "1623334786735",
+            "replyToId": null,
+            "etag": "1623334786735",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:19:46.735Z",
+            "lastModifiedDateTime": "2021-06-10T14:19:46.735Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "af25e0eb-1a25-4c6d-8412-845dcea36897",
+                    "displayName": "Ahmed Hashish",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><at id=\"0\">Ahmed Hamdy</at> <br>Where are you</div>"
+            },
+            "attachments": [],
+            "mentions": [{
+                "id": 0,
+                "mentionText": "Ahmed Hamdy",
+                "mentioned": {
+                    "application": null,
+                    "device": null,
+                    "conversation": null,
+                    "user": {
+                        "id": "01522583-3f06-4c5d-9f10-7abc45be5687",
+                        "displayName": "Ahmed Hamdy",
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }],
+            "reactions": []
+        }, {
+            "id": "1623334740138",
+            "replyToId": null,
+            "etag": "1623334740138",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:19:00.138Z",
+            "lastModifiedDateTime": "2021-06-10T14:19:00.138Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><blockquote itemscope=\"\" itemtype=\"http://schema.skype.com/Reply\" itemid=\"1623334472773\"><p><b><span itemprop=\"mri\" itemid=\"8:orgid:3248374a-5744-4b4d-9886-72eabf211beb\" style=\"font-size:small\">Yahia Ghoniem&nbsp;</span><span itemprop=\"time\" itemid=\"1623334472773\"></span></b></p><p itemprop=\"preview\">test</p></blockquote>Reply 11</div>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1623334738795",
+            "replyToId": null,
+            "etag": "1623334738795",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:18:58.795Z",
+            "lastModifiedDateTime": "2021-06-10T14:18:58.795Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "af25e0eb-1a25-4c6d-8412-845dcea36897",
+                    "displayName": "Ahmed Hashish",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><blockquote itemscope=\"\" itemtype=\"http://schema.skype.com/Reply\" itemid=\"1623334431087\"><strong itemprop=\"mri\" itemid=\"8:orgid:a590360a-a533-49fe-b872-76c4a0381fc9\">Aya Fahmy</strong><span itemprop=\"time\" itemid=\"1623334431087\"></span><p itemprop=\"preview\">hello\\</p></blockquote>اهلا ومرحبا</div>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1623334472773",
+            "replyToId": null,
+            "etag": "1623334721025",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:14:32.773Z",
+            "lastModifiedDateTime": "2021-06-10T14:18:41.025Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "3248374a-5744-4b4d-9886-72eabf211beb",
+                    "displayName": "Yahia Ghoniem",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "test"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [{
+                "reactionType": "like",
+                "createdDateTime": "2021-06-10T14:18:41.035Z",
+                "user": {
+                    "application": null,
+                    "device": null,
+                    "conversation": null,
+                    "user": {
+                        "id": "af25e0eb-1a25-4c6d-8412-845dcea36897",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }]
+        }, {
+            "id": "1623334699288",
+            "replyToId": null,
+            "etag": "1623334699288",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:18:19.288Z",
+            "lastModifiedDateTime": "2021-06-10T14:18:19.288Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "af25e0eb-1a25-4c6d-8412-845dcea36897",
+                    "displayName": "Ahmed Hashish",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><attachment id=\"bfb101ece45946be988be560a74322f3\"></attachment></div>"
+            },
+            "attachments": [{
+                "id": "bfb101ece45946be988be560a74322f3",
+                "contentType": "application/vnd.microsoft.card.audio",
+                "contentUrl": null,
+                "content": "{  \"duration\": \"PT2S\",  \"media\": [    {      \"url\": \"https://graph.microsoft.com/v1.0/chats/19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2/messages/1623334699288/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly9ldS1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd2V1LWQyMS0yYzY0NTMzMDY4YTdkNzVhYmQ2ZTRmM2JhNzIzMDM2Ni92aWV3cy9hdWRpbw==/$value\"    }  ]}",
+                "name": null,
+                "thumbnailUrl": null
+            }],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1623334676890",
+            "replyToId": null,
+            "etag": "1623334676890",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:17:56.89Z",
+            "lastModifiedDateTime": "2021-06-10T14:17:56.89Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "af25e0eb-1a25-4c6d-8412-845dcea36897",
+                    "displayName": "Ahmed Hashish",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div> <div>  <img alt=\"Captured photo\" src=\"https://graph.microsoft.com/v1.0/chats/19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2/messages/1623334676890/hostedContents/aWQ9LHR5cGU9MSx1cmw9aHR0cHM6Ly9ldS1hcGkuYXNtLnNreXBlLmNvbS92MS9vYmplY3RzLzAtd2V1LWQyLWY5Yzk2MDE0ZjlmOGU5MTI2OWJlNzNlNTI2YWI0ZTI3L3ZpZXdzL2ltZ28=/$value\" width=\"720\" height=\"600\">   <br> </div></div>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1623334431087",
+            "replyToId": null,
+            "etag": "1623334431087",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T14:13:51.087Z",
+            "lastModifiedDateTime": "2021-06-10T14:13:51.087Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "hello\\"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1623318339596",
+            "replyToId": null,
+            "etag": "1623318339596",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T09:45:39.596Z",
+            "lastModifiedDateTime": "2021-06-10T09:45:39.596Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "<attachment id=\"ca817635-9ada-447c-88a6-10087e17247f\"></attachment>"
+            },
+            "attachments": [{
+                "id": "ca817635-9ada-447c-88a6-10087e17247f",
+                "contentType": "reference",
+                "contentUrl": "https://datastars0-my.sharepoint.com/personal/afahmy_data-stars_com/Documents/Microsoft Teams Chat Files/WorkStages.png",
+                "content": null,
+                "name": "WorkStages.png",
+                "thumbnailUrl": null
+            }],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1623317013443",
+            "replyToId": null,
+            "etag": "1623317013443",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T09:23:33.443Z",
+            "lastModifiedDateTime": "2021-06-10T09:23:33.443Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><at id=\"0\">Ahmed Hamdy</at> mention ahmed hamdy for this meeting</div>"
+            },
+            "attachments": [],
+            "mentions": [{
+                "id": 0,
+                "mentionText": "Ahmed Hamdy",
+                "mentioned": {
+                    "application": null,
+                    "device": null,
+                    "conversation": null,
+                    "user": {
+                        "id": "01522583-3f06-4c5d-9f10-7abc45be5687",
+                        "displayName": "Ahmed Hamdy",
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }],
+            "reactions": []
+        }, {
+            "id": "1623315736303",
+            "replyToId": null,
+            "etag": "1623315768668",
+            "messageType": "message",
+            "createdDateTime": "2021-06-10T09:02:16.303Z",
+            "lastModifiedDateTime": "2021-06-10T09:02:48.668Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><blockquote itemscope=\"\" itemtype=\"http://schema.skype.com/Reply\" itemid=\"1622113179915\"><p><b><span itemprop=\"mri\" itemid=\"8:orgid:a590360a-a533-49fe-b872-76c4a0381fc9\" style=\"font-size:small\">Aya Fahmy&nbsp;</span><span itemprop=\"time\" itemid=\"1622113179915\"></span></b></p><p itemprop=\"preview\">replyyyy</p></blockquote>رد على رسالة reply</div>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [{
+                "reactionType": "like",
+                "createdDateTime": "2021-06-10T09:02:48.678Z",
+                "user": {
+                    "application": null,
+                    "device": null,
+                    "conversation": null,
+                    "user": {
+                        "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }]
+        }, {
+            "id": "1622113179915",
+            "replyToId": null,
+            "etag": "1623315664229",
+            "messageType": "message",
+            "createdDateTime": "2021-05-27T10:59:39.915Z",
+            "lastModifiedDateTime": "2021-06-10T09:01:04.229Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "replyyyy"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [{
+                "reactionType": "heart",
+                "createdDateTime": "2021-06-10T09:01:04.244Z",
+                "user": {
+                    "application": null,
+                    "device": null,
+                    "conversation": null,
+                    "user": {
+                        "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }]
+        }, {
+            "id": "1622113183292",
+            "replyToId": null,
+            "etag": "1622113183292",
+            "messageType": "message",
+            "createdDateTime": "2021-05-27T10:59:43.292Z",
+            "lastModifiedDateTime": "2021-05-27T10:59:43.292Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "plllll"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }, {
+            "id": "1622113181546",
+            "replyToId": null,
+            "etag": "1622113181546",
+            "messageType": "message",
+            "createdDateTime": "2021-05-27T10:59:41.546Z",
+            "lastModifiedDateTime": "2021-05-27T10:59:41.546Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:meeting_ODM1YWMyZWYtYzgxZi00YWFmLWI0N2EtNWY4MTU4MzU5MDhj@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "a590360a-a533-49fe-b872-76c4a0381fc9",
+                    "displayName": "Aya Fahmy",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "text",
+                "content": "hiiiii"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }]
+    };
+    var contentDiv = "";
+    var chatMembers = [];
+    var chatMembersUnique;
+    var chatMembersDisplay = "";
+
+    for (let index = data.value.length - 1; index >= 0; index--) {
+        var date = new Date(data.value[index].createdDateTime);
+        chatMembers.push(data.value[index].from.user.displayName);
+        chatMembersUnique = [...new Set(chatMembers)];
+        contentDiv +=
+            `<div class="d-flex py-2 align-baseline justify-content-start" id=${data.value[index].id}>
+                <div class="personImg mrmd">
+                        <img src="images/person.png" alt="">
+                </div>
+                <div class="text-left w-90">
+                    <div class="message">
+                        ${data.value[index].body.content}
+                    </div>
+                    <div class="d-flex justify-between">
+                        <span class="hint">${data.value[index].from.user.displayName}</span>
+                        <span class="hint">${date.toLocaleTimeString()}</span>
+                    </div>
+                </div>
+             </div>`
+    }
+
+    for (let index = 0; index < chatMembersUnique.length; index++) {
+        chatMembersDisplay +=
+            `<div class="d-flex py-2 align-baseline justify-content-end">
+                    <div class="personName">
+                        ${chatMembersUnique[index]}
+                    </div>
+                    <div class="personImg mrmd">
+                        <img src="images/person.png" alt="">
+                    </div>
+            </div>`
+    }
+    document.getElementsByClassName('chatContnet')[0].innerHTML = contentDiv;
+    document.getElementsByClassName('teamEntities')[0].innerHTML = chatMembersDisplay;
+</script>
+
+ 
+		<footer class="footer" id="footer">
+    <div class="container-fluid">
+        <div class="copyright">
+            جميع الحقوق محفوظة - مكتب إدارة اللجان 1442
+        </div>
+        <div class="prog-vision">
+            <div class="footer_logos clearfix">
+                <img src="images/icons/Icon awesome-user-alt.svg" alt="">
+                <img src="images/icons/calendar.svg" alt="">
+                <img src="images/icons/chart-line.svg" alt="">
+                <img src="images/icons/chart-pie.svg" alt="">
+                <img src="images/icons/building.svg" alt="">
+                <img src="images/icons/book.svg" alt="">
+                <img src="images/icons/phone-square.svg" alt="">
+                <img src="images/icons/balance-scale.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+	<script>
+		var lightBtn = document.getElementById('changeToLight');
+		var darkBtn = document.getElementById('changeToDark');
+	
+		var arLang = document.getElementById('arabicLang');
+		var enLang = document.getElementById('englishLang');
+	
+		var theme = localStorage.getItem('theme');
+		var lang = localStorage.getItem('lang');
+	
+		var logo = document.getElementsByClassName('logo')[0];
+		var overlay = document.getElementsByClassName('overlay')[0];
+	
+		if (lightBtn && darkBtn) {
+			if (theme === null || theme === 'root') {
+				lightBtn.style.display = 'none';
+				darkBtn.style.display = 'block';
+				logo.style.background = 'url("images/commColor.png") no-repeat 0 0';
+				overlay.style.background = 'rgba(22, 25, 39, 0)';
+			} else if (theme === 'dark') {
+				lightBtn.style.display = 'block';
+				darkBtn.style.display = 'none'
+				logo.style.background = 'url("images/commWhite.png") no-repeat 0 0';
+				overlay.style.background = 'rgba(22, 25, 39, 0.85)';
+			}
+		}
+	
+	
+		if (arLang && enLang) {
+			if (lang === null || lang === 'ar') {
+				enLang.style.display = 'none';
+				arLang.style.display = 'flex';
+			} else if (lang === 'en') {
+				enLang.style.display = 'flex';
+				arLang.style.display = 'none';
+			}
+		}
+	</script>
+
+		<!-- scripts -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!-- <script src="./../js/bootstrap.bundle.js"></script> -->
+	
+	
+		<!--------------------- link js files here --------------------->
+		<script src="js/select2.js"></script>
+		<script src="js/bootstrap-clockpicker.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/jquery.gre.js"></script>
+		<script src="js/jquery-simple-tree-table.js"></script>
+		
+		<!-- time spinner -->
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/jquery-ui-timespinner.js"></script>
+		
+		<!-- calendar -->
+		<script src="js/main.js"></script>
+		<script src="js/locales-all.js"></script>
+		
+		<!-- datepicker -->
+		<script src="js/calendar/jquery.calendars.js"></script>
+		<script src="js/calendar/jquery.calendars.plus.js"></script>
+		<script src="js/calendar/jquery.plugin.js"></script>
+		<script src="js/calendar/jquery.calendars.picker.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic-ar.js"></script>
+		
+		<!-- charts -->
+		<script src="js/highcharts/proj4.js"></script>
+		<script src="js/highcharts/highcharts.js"></script>
+		<script src="js/highcharts/drilldown.js"></script>
+		<script src="js/highcharts/variable-pie.js"></script>
+		<script src="js/charts.js"></script>
+		<script src="js/jquery.multi-select.js"></script>
+		
+		<script src="js/script1.js"></script>
+		<script src="js/script.js"></script>
+</body>
+</html>

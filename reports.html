@@ -1,0 +1,537 @@
+<!doctype html>
+<html class="no-js root" lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> التقارير </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="icon.png">
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function(e, t, n) {
+            var r = e.querySelectorAll("html")[0];
+            r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+        })(document, window, 0);
+
+        var doc = document.getElementsByTagName('html')[0];
+        var links = document.getElementsByTagName('link')[0];
+        var theme = localStorage.getItem('theme');
+        var lang = localStorage.getItem('lang');
+
+        if (theme !== null) {
+            doc.classList.add(theme);
+        } else if (theme === null) {
+            doc.classList.add('root');
+        }
+
+        if (lang === null || lang == 'ar') {
+            doc.setAttribute('dir', 'rtl');
+            links.setAttribute('href', 'css/style-rtl.css');
+        } else if (lang === 'en') {
+            doc.setAttribute('dir', 'ltr');
+            links.setAttribute('href', 'css/style.css');
+        }
+    </script>
+	
+</head>
+<body>
+
+	<div class="page-wrapper">
+		
+			<header class="header legan">
+	<div class="top-header">
+		<div class="container-fluid">
+			<div class="logo">
+			</div>
+		</div>
+	</div>
+
+	<div class="main-nav">
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="maham.html"> المهام </a>
+						<span class="nav-link-notify">4</span>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="leggan.html">اللجان</a></li>
+					<li class="nav-item"><a class="nav-link" href="meetings.html">الاجتماعات</a></li>
+					<li class="nav-item"><a class="nav-link" href="morasalat.html">المراسلات</a></li>
+					<li class="nav-item"><a class="nav-link" href="reports.html">التقارير</a></li>
+					<li class="nav-item show-list"><a class="nav-link" href="#">الادارة<i
+								class="fas fa-sort-down mr-2"></i></a>
+						<ul class="showw-list list-unstyled px-0">
+							<li class="show-files3">
+								<a class="d-block py-2" href="">الملفات<i
+										class="fas fa-sort-down mr-2"></i></a>
+								<!-- files list -->
+								<ul class="showw-files list-unstyled px-0">
+									<li>
+										<a class="d-block py-2" href="all_files.html"><i
+												class="fas fa-caret-right ml-2"></i>جميع الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="template_files.html"><i
+												class="fas fa-caret-right ml-2"></i>قوالب
+											الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="index_files.html"><i
+												class="fas fa-caret-right ml-2"></i>فهرس
+											الملفات
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="_files.html"><i
+												class="fas fa-caret-right ml-2"></i>المجلدات</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="show-privilage">
+								<a class="py-2" href="">الصلاحيات<i class="fas fa-sort-down mr-2"></i></a>
+								<!-- privilage list -->
+								<ul class="showw-privilage list-unstyled px-0">
+									<li>
+										<a class="d-block py-2" href="groups.html"><i
+												class="fas fa-caret-right ml-2"></i>المجموعات</a>
+									</li>
+									<li>
+										<a class="py-2" href="privilages.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات المجموعة</a>
+									</li>
+									<li>
+										<a class="py-2" href="users_privilage.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات الادوار
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="users_roles.html"><i
+												class="fas fa-caret-right ml-2"></i>ادوار المستخدمين
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="object-privilige.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات المستخدمين</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات مستخدمين الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages_index.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات فهرس الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages_group.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات ملفات المجموعة</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="py-2" href="members.html"><i
+										class="fas fa-caret-right ml-2"></i>الاعضاء</a>
+							</li>
+							<li>
+								<a class="py-2" href="gehat.html"><i
+										class="fas fa-caret-right ml-2"></i>الجهات</a>
+							</li>
+							<li>
+								<a class="py-2" href="holidays.html"><i
+										class="fas fa-caret-right ml-2"></i>العطلات
+									الرسمية</a>
+							</li>
+							<li>
+								<a class="py-2" href="lockups.html"><i
+										class="fas fa-caret-right ml-2"></i>اكواد النظام</a>
+							</li>
+							<li>
+								<a class="py-2" href="locations.html">
+									<i class="fas fa-caret-right ml-2"></i>المقرات</a>
+							</li>
+							<li>
+								<a class="py-2" href="notifications.html"><i
+										class="fas fa-caret-right ml-2"></i>الاشعارات</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="calendar.html">التقويم</a></li>
+					<li class="nav-item"><a class="nav-link" href="delegate.html">التفويضات</a></li>
+				</ul>
+
+				<div style="display:flex;align-items:center;" class="settings">
+					<form class="mlxs">
+						<button class="btn bg-transparent py-1" id="changeToLight">
+							<img src="images/icons/Light_mood_moon.png" alt="">
+						</button>
+						<button class="btn bg-transparent py-1" id="changeToDark">
+							<img src="images/icons/Dark_mood_sun.png" alt="">
+						</button>
+					</form>
+
+					<div class="noti_Container mlxs" id="noti_Container">
+						<a href="javascript:void(0);" id="noti_Button" class="noti_Button"><i
+								class="fas fa-bell"></i></a>
+						<span id="noti_Counter" class="noti_Counter">7</span>
+						<!--THE NOTIFICAIONS DROPDOWN BOX.-->
+						<div id="notifications" class="notifications">
+							<h3>اخر الإشعارات</h3>
+							<div style="height:300px;" class="notifications-body scroll">
+								<ol class="list">
+									<li>
+										<div>
+											<div><span class="text-primary">تحديث</span> إنتقال لمرحلة جديدة
+											</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+								</ol>
+							</div>
+							<div class="seeAll"><a href="#">شاهد الكُل</a></div>
+						</div>
+					</div>
+
+					<form class="mlxs">
+						<button id="arabicLang">AR</button>
+						<button id="englishLang">EN</button>
+					</form>
+
+					<div class="today">
+						<span id="hijri"></span> /
+						<span id="meladi"></span>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+		
+
+		<section class="account-strip">
+    <div class="overlay">
+        <div class="container-fluid clearfix">
+            <div class="user-account">
+                مرحباً: أحمد - <a class="link" href="#">تسجيل الخروج</a>
+            </div>
+            <div class="global-search">
+                <input type="search" name="" class="search_input" placeholder="ابحث هنا...">
+                <a class="search-link"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+</section> 
+		
+
+<div class="main-content " id="mainContent">
+    <div class="charts_container">
+        <div class="row">
+            <div class="col-7">
+                <div class="chart-wrapper p-0">
+                    <div class="border-gray px-3">
+                        <p class="sub-title">حالة و نوع اللجنة</p>
+                    </div>
+                    <div id="report2" data-chart='[{
+                        "name": "قائم",
+                        "data": [5, 3, 4, 7],
+                        "color": "#1BAA76"
+                    }, {
+                        "name": "تم الضم",
+                        "data": [2, 2, 3, 2],
+                        "color": "#7776BC"
+                    }, {
+                        "name": "متوقف",
+                        "data": [3, 4, 4, 2],
+                        "color": "#fbb040"
+                    }, {
+                        "name": "اغلق",
+                        "data": [3, 4, 4, 2],
+                        "color": "#C8F0D7"
+                    }, {
+                        "name": "الغي",
+                        "data": [3, 4, 4, 2],
+                        "color": "#FA6565"
+                    }]' style="height:300px"></div>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="chart-wrapper p-0">
+                    <div class="border-gray px-3">
+                        <p class="sub-title">نوع اللجنة</p>
+                    </div>
+                    <div id="report1" data-chart='[{"name": "أخري","y": 20,"color":"#0C66E1"},{"name": "لجان خبراء","y": 25,"color":"#7776BC"},{"name": "لجان مجالس", "y": 15,"color":"#A9CDFF"},{"name": "لجان وزارية", "y": 40,"color":"#5BB1F8"}]' style="height:300px"></div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="chart-wrapper p-0">
+                    <div class="border-gray px-3 d-flex justify-content-between ptsm">
+                        <p class="sub-title m-0">اللجان</p>
+                        <div class="d-flex">
+                            <div class="select-wrapper ml-3">
+                                <select name="" class="form-control">
+                                    <option>جميع المهام
+                                    </option>
+                                    <option>مهام لجان
+                                    </option>
+                                    <option>مهام اجتماعات
+                                    </option>
+                                    <option>مهام تكليفات
+                                    </option>
+                                    <option>قيد الانشاء
+                                    </option>
+                                    <option>مهام مشاريع
+                                    </option>
+                                    <option>مهام افادات
+                                    </option>
+                                    <option>مهام تقرير الاجتماعات
+                                    </option>
+                                    <option>مهام ارفاق ملفات
+                                    </option>
+                                    <option>مهام التعليقات
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="select-wrapper">
+                                <select name="" class="form-control">
+                                    <option>جميع اللجان
+                                    </option>
+                                    <option>لجان وزارية
+                                    </option>
+                                    <option>لجان هيئة خبراء
+                                    </option>
+                                    <option>لجان مجالس
+                                    </option>
+                                    <option>لجان أخري
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive mtmd">
+                        <table class="js-datatable table table-striped table-borderless table-hover">
+                            <thead>
+                                <tr>
+                                    <th>اسم اللجنة</th>
+                                    <th>الوصف</th>
+                                    <th>تصنيف اللجنة</th>
+                                    <th>مصدر اللجنة</th>
+                                    <th>حالة اللجنة</th>
+                                    <th>مدة اللجنة</th>
+                                    <th>نوع اللجنة</th>
+                                    <th>تاريخ البدء</th>
+                                    <th>تاريخ الانتهاء</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>لجنة التحول الوطنى</td>
+                                    <td>لجنة التحول الوطنى</td>
+                                    <td>لجنة دولية</td>
+                                    <td>مجلس الشئون</td>
+                                    <td> <span class="leg-status yellow"></span> لم تبدأ
+                                    </td>
+                                    <td>قائمة</td>
+                                    <td>لجنة خبراء</td>
+                                    <td>12/2/1441</td>
+                                    <td>12/2/1441</td>
+                                </tr>
+
+                                <tr>
+                                    <td>لجنة التحول الوطنى</td>
+                                    <td>لجنة التحول الوطنى</td>
+                                    <td>لجنة دولية</td>
+                                    <td>مجلس الشئون</td>
+                                    <td> <span class="leg-status orange"></span>متوقف
+                                    </td>
+                                    <td>قائمة</td>
+                                    <td>لجنة خبراء</td>
+                                    <td>12/2/1441</td>
+                                    <td>12/2/1441</td>
+                                </tr>
+
+                                <tr>
+                                    <td>لجنة التحول الوطنى</td>
+                                    <td>لجنة التحول الوطنى</td>
+                                    <td>لجنة دولية</td>
+                                    <td>مجلس الشئون</td>
+                                    <td> <span class="leg-status green"></span>قائم
+                                    </td>
+                                    <td>قائمة</td>
+                                    <td>لجنة خبراء</td>
+                                    <td>12/2/1441</td>
+                                    <td>12/2/1441</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+		<footer class="footer" id="footer">
+    <div class="container-fluid">
+        <div class="copyright">
+            جميع الحقوق محفوظة - مكتب إدارة اللجان 1442
+        </div>
+        <div class="prog-vision">
+            <div class="footer_logos clearfix">
+                <img src="images/icons/Icon awesome-user-alt.svg" alt="">
+                <img src="images/icons/calendar.svg" alt="">
+                <img src="images/icons/chart-line.svg" alt="">
+                <img src="images/icons/chart-pie.svg" alt="">
+                <img src="images/icons/building.svg" alt="">
+                <img src="images/icons/book.svg" alt="">
+                <img src="images/icons/phone-square.svg" alt="">
+                <img src="images/icons/balance-scale.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+	<script>
+		var lightBtn = document.getElementById('changeToLight');
+		var darkBtn = document.getElementById('changeToDark');
+	
+		var arLang = document.getElementById('arabicLang');
+		var enLang = document.getElementById('englishLang');
+	
+		var theme = localStorage.getItem('theme');
+		var lang = localStorage.getItem('lang');
+	
+		var logo = document.getElementsByClassName('logo')[0];
+		var overlay = document.getElementsByClassName('overlay')[0];
+	
+		if (lightBtn && darkBtn) {
+			if (theme === null || theme === 'root') {
+				lightBtn.style.display = 'none';
+				darkBtn.style.display = 'block';
+				logo.style.background = 'url("images/commColor.png") no-repeat 0 0';
+				overlay.style.background = 'rgba(22, 25, 39, 0)';
+			} else if (theme === 'dark') {
+				lightBtn.style.display = 'block';
+				darkBtn.style.display = 'none'
+				logo.style.background = 'url("images/commWhite.png") no-repeat 0 0';
+				overlay.style.background = 'rgba(22, 25, 39, 0.85)';
+			}
+		}
+	
+	
+		if (arLang && enLang) {
+			if (lang === null || lang === 'ar') {
+				enLang.style.display = 'none';
+				arLang.style.display = 'flex';
+			} else if (lang === 'en') {
+				enLang.style.display = 'flex';
+				arLang.style.display = 'none';
+			}
+		}
+	</script>
+
+		<!-- scripts -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!-- <script src="./../js/bootstrap.bundle.js"></script> -->
+	
+	
+		<!--------------------- link js files here --------------------->
+		<script src="js/select2.js"></script>
+		<script src="js/bootstrap-clockpicker.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/jquery.gre.js"></script>
+		<script src="js/jquery-simple-tree-table.js"></script>
+		
+		<!-- time spinner -->
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/jquery-ui-timespinner.js"></script>
+		
+		<!-- calendar -->
+		<script src="js/main.js"></script>
+		<script src="js/locales-all.js"></script>
+		
+		<!-- datepicker -->
+		<script src="js/calendar/jquery.calendars.js"></script>
+		<script src="js/calendar/jquery.calendars.plus.js"></script>
+		<script src="js/calendar/jquery.plugin.js"></script>
+		<script src="js/calendar/jquery.calendars.picker.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic-ar.js"></script>
+		
+		<!-- charts -->
+		<script src="js/highcharts/proj4.js"></script>
+		<script src="js/highcharts/highcharts.js"></script>
+		<script src="js/highcharts/drilldown.js"></script>
+		<script src="js/highcharts/variable-pie.js"></script>
+		<script src="js/charts.js"></script>
+		<script src="js/jquery.multi-select.js"></script>
+		
+		<script src="js/script1.js"></script>
+		<script src="js/script.js"></script>
+</body>
+</html>

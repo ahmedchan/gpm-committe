@@ -1,0 +1,1681 @@
+<!doctype html>
+<html class="no-js root" lang="ar" dir="rtl">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> اللجان </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="icon.png">
+
+	<link rel="stylesheet" href="css/style.css">
+
+    <script>
+        (function(e, t, n) {
+            var r = e.querySelectorAll("html")[0];
+            r.className = r.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2")
+        })(document, window, 0);
+
+        var doc = document.getElementsByTagName('html')[0];
+        var links = document.getElementsByTagName('link')[0];
+        var theme = localStorage.getItem('theme');
+        var lang = localStorage.getItem('lang');
+
+        if (theme !== null) {
+            doc.classList.add(theme);
+        } else if (theme === null) {
+            doc.classList.add('root');
+        }
+
+        if (lang === null || lang == 'ar') {
+            doc.setAttribute('dir', 'rtl');
+            links.setAttribute('href', 'css/style-rtl.css');
+        } else if (lang === 'en') {
+            doc.setAttribute('dir', 'ltr');
+            links.setAttribute('href', 'css/style.css');
+        }
+    </script>
+	
+</head>
+<body>
+
+	<div class="page-wrapper">
+		
+			<header class="header legan">
+	<div class="top-header">
+		<div class="container-fluid">
+			<div class="logo">
+			</div>
+		</div>
+	</div>
+
+	<div class="main-nav">
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active"><a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="maham.html"> المهام </a>
+						<span class="nav-link-notify">4</span>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="leggan.html">اللجان</a></li>
+					<li class="nav-item"><a class="nav-link" href="meetings.html">الاجتماعات</a></li>
+					<li class="nav-item"><a class="nav-link" href="morasalat.html">المراسلات</a></li>
+					<li class="nav-item"><a class="nav-link" href="reports.html">التقارير</a></li>
+					<li class="nav-item show-list"><a class="nav-link" href="#">الادارة<i
+								class="fas fa-sort-down mr-2"></i></a>
+						<ul class="showw-list list-unstyled px-0">
+							<li class="show-files3">
+								<a class="d-block py-2" href="">الملفات<i
+										class="fas fa-sort-down mr-2"></i></a>
+								<!-- files list -->
+								<ul class="showw-files list-unstyled px-0">
+									<li>
+										<a class="d-block py-2" href="all_files.html"><i
+												class="fas fa-caret-right ml-2"></i>جميع الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="template_files.html"><i
+												class="fas fa-caret-right ml-2"></i>قوالب
+											الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="index_files.html"><i
+												class="fas fa-caret-right ml-2"></i>فهرس
+											الملفات
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="_files.html"><i
+												class="fas fa-caret-right ml-2"></i>المجلدات</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="show-privilage">
+								<a class="py-2" href="">الصلاحيات<i class="fas fa-sort-down mr-2"></i></a>
+								<!-- privilage list -->
+								<ul class="showw-privilage list-unstyled px-0">
+									<li>
+										<a class="d-block py-2" href="groups.html"><i
+												class="fas fa-caret-right ml-2"></i>المجموعات</a>
+									</li>
+									<li>
+										<a class="py-2" href="privilages.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات المجموعة</a>
+									</li>
+									<li>
+										<a class="py-2" href="users_privilage.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات الادوار
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="users_roles.html"><i
+												class="fas fa-caret-right ml-2"></i>ادوار المستخدمين
+										</a>
+									</li>
+									<li>
+										<a class="py-2" href="object-privilige.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات المستخدمين</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات مستخدمين الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages_index.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات فهرس الملفات</a>
+									</li>
+									<li>
+										<a class="py-2" href="files_privilages_group.html"><i
+												class="fas fa-caret-right ml-2"></i>صلاحيات ملفات المجموعة</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a class="py-2" href="members.html"><i
+										class="fas fa-caret-right ml-2"></i>الاعضاء</a>
+							</li>
+							<li>
+								<a class="py-2" href="gehat.html"><i
+										class="fas fa-caret-right ml-2"></i>الجهات</a>
+							</li>
+							<li>
+								<a class="py-2" href="holidays.html"><i
+										class="fas fa-caret-right ml-2"></i>العطلات
+									الرسمية</a>
+							</li>
+							<li>
+								<a class="py-2" href="lockups.html"><i
+										class="fas fa-caret-right ml-2"></i>اكواد النظام</a>
+							</li>
+							<li>
+								<a class="py-2" href="locations.html">
+									<i class="fas fa-caret-right ml-2"></i>المقرات</a>
+							</li>
+							<li>
+								<a class="py-2" href="notifications.html"><i
+										class="fas fa-caret-right ml-2"></i>الاشعارات</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="calendar.html">التقويم</a></li>
+					<li class="nav-item"><a class="nav-link" href="delegate.html">التفويضات</a></li>
+				</ul>
+
+				<div style="display:flex;align-items:center;" class="settings">
+					<form class="mlxs">
+						<button class="btn bg-transparent py-1" id="changeToLight">
+							<img src="images/icons/Light_mood_moon.png" alt="">
+						</button>
+						<button class="btn bg-transparent py-1" id="changeToDark">
+							<img src="images/icons/Dark_mood_sun.png" alt="">
+						</button>
+					</form>
+
+					<div class="noti_Container mlxs" id="noti_Container">
+						<a href="javascript:void(0);" id="noti_Button" class="noti_Button"><i
+								class="fas fa-bell"></i></a>
+						<span id="noti_Counter" class="noti_Counter">7</span>
+						<!--THE NOTIFICAIONS DROPDOWN BOX.-->
+						<div id="notifications" class="notifications">
+							<h3>اخر الإشعارات</h3>
+							<div style="height:300px;" class="notifications-body scroll">
+								<ol class="list">
+									<li>
+										<div>
+											<div><span class="text-primary">تحديث</span> إنتقال لمرحلة جديدة
+											</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+									<li>
+										<div>
+											<div><span class="text-primary">إجراء</span> مطلوب إفادة</div>
+											<date class="text-muted"><small><span>9.00 AM</span>
+													<span>Today</span></small></date>
+										</div>
+										<div>طلب الديوان الملكي بالرفع والتسجيل</div>
+									</li>
+								</ol>
+							</div>
+							<div class="seeAll"><a href="#">شاهد الكُل</a></div>
+						</div>
+					</div>
+
+					<form class="mlxs">
+						<button id="arabicLang">AR</button>
+						<button id="englishLang">EN</button>
+					</form>
+
+					<div class="today">
+						<span id="hijri"></span> /
+						<span id="meladi"></span>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+</header>
+		
+
+		<section class="account-strip">
+    <div class="overlay">
+        <div class="container-fluid clearfix">
+            <div class="user-account">
+                مرحباً: أحمد - <a class="link" href="#">تسجيل الخروج</a>
+            </div>
+            <div class="global-search">
+                <input type="search" name="" class="search_input" placeholder="ابحث هنا...">
+                <a class="search-link"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+</section> 
+		
+
+<div class="main-content " id="mainContent">
+    <div class="modal py-5 tasneef fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog dialog-create">
+            <div class="modal-content py-4 content-create">
+                <div class="modal-header">
+                    <button type="button" class="close mtsm" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body scroll">
+                    <!-- create lagna header(1) -->
+                    <div class=" d-block accordion">
+                        <div class="card">
+                            <h3 class="modal-title pb-2" id="staticBackdropLabel">إنشاء اللجنة
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- create lagna header(2) -->
+                    <div class=" d-block accordion">
+                        <div class="card">
+                            <div class="card-header pr-0">
+                                <button class="collaps" type="button" data-toggle="collapse" data-target="#tab2-collapse1" aria-expanded="true" aria-controls="tab2-collapse1"></button>
+                                <h3 class="mr-2 sub-title p-0 d-inline-block">إنشاء لجنة
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- create lagna body (2) -->
+                    <div id="tab2-collapse1" class="collapse show" aria-labelledby="tab3-heading1">
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xs">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <div>
+                                            <i class="far fa-trash-alt"></i>
+                                        </div>
+                                        <h2 class="title" id="exampleModalLabel">هل تريد ازالة العنصر؟
+                                        </h2>
+                                        <p>عند ازالة العنصر لا يمكن استعادته مرة اخري
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="button" class="btn btn-wide btn-primary" data-dismiss="modal">نعم</button>
+                                        <button type="button" class="btn btn-wide btn-primary-reverse" data-dismiss="modal">لا</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- MultiStep Form -->
+                        <div class="row mx-0">
+                            <div class="col-12 mx-0">
+                                <div id="msform">
+                                    <!-- progressbar -->
+                                    <ul id="progressbar" class="d-flex">
+                                        <li class="active">
+                                            <p>بيانات اللجنة</p>
+                                        </li>
+                                        <li id="personal">
+                                            <p>اضافة الجهات</p>
+                                        </li>
+                                        <li id="payment">
+                                            <p>اضافة الاعضاء</p>
+                                        </li>
+                                        <li id="confirm">
+                                            <p>استخراج الخطاب</p>
+                                        </li>
+                                    </ul>
+
+                                    <!-- fieldsets -->
+                                    <fieldset class="aligned-container">
+                                        <div class="row">
+                                            <div class="col-3 col-md-2 as-vertical-tab-menu p-0">
+                                                <div class="list-group">
+                                                    <a href="#" class="list-group-item active text-right">
+                                                        تصنيف اللجنة
+                                                    </a>
+                                                    <a href="#" class="list-group-item text-right">
+                                                        <h4 class="glyphicon glyphicon-road">
+                                                        </h4>
+                                                        بيانات رئيسية
+                                                    </a>
+
+                                                    <a href="#" class="list-group-item text-right">
+                                                        مصدر اللجنة
+                                                    </a>
+                                                    <a href="#" class="list-group-item text-right">
+                                                        موعد اللجنة
+                                                    </a>
+                                                    <a href="#" class="list-group-item text-right">
+                                                        تمثيل الوزير
+                                                    </a>
+                                                    <a href="#" class="list-group-item text-right">
+                                                        أهداف اللجنة
+                                                    </a>
+                                                    <a href="#" class="list-group-item text-right">
+                                                        مراقبين اعمال اللجنة
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-9 col-md-10 as-vertical-tab pl-0">
+                                                <!-- tasneef section -->
+                                                <div class="as-vertical-tab-content active ">
+                                                    <div class="row">
+
+
+                                                        <div class="col-6">
+                                                            <div><label for="" class="col-form-label">
+                                                                    نوع اللجنة:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <input type="text" name="" class="form-control disabled-input" placeholder="لجنة وزارية">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div><label for="" class="col-form-label">
+                                                                    تصنيف اللجنة:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control">
+                                                                    <option>لجان دولية
+                                                                    </option>
+                                                                    <option value="1">لجان
+                                                                        محلية
+                                                                    </option>
+                                                                    <option value="2">لجان
+                                                                        داخلية
+                                                                        توجيهية</option>
+                                                                    <option value="2">لجان
+                                                                        داخلية
+                                                                        تنفيذية</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6">
+                                                            <div><label for="" class="col-form-label">
+                                                                    الاهمية:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control">
+                                                                    <option value="1">هامة جدا</option>
+                                                                    <option>هامة </option>
+                                                                    <option>عادية </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div><label for="" class="col-form-label">
+                                                                    السرية:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control">
+                                                                    <option>سري جدا
+                                                                    </option>
+                                                                    <option value="1">سري
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- data section section -->
+                                                <div class="as-vertical-tab-content ">
+                                                    <div class="row">
+                                                        <div class="mbsm col-12">
+                                                            <label for="" class="col-form-label">اسم
+                                                                اللجنة:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <input type="text" name="" class="form-control" placeholder="اسم اللجنة">
+                                                        </div>
+
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">وصف
+                                                                اللجنة:
+                                                                <span>*</span></label>
+                                                            <textarea placeholder="وصف اللجنة" name="" class="form-control" rows="2">
+                                                                </textarea>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">الشروط
+                                                                :
+                                                                <span>*</span></label>
+                                                            <textarea placeholder="الشروط" name="" class="form-control" rows="2"></textarea>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">غرض
+                                                                اللجنة:
+                                                                <span>*</span></label>
+                                                            <textarea placeholder="الأغراض" name="" class="form-control" rows="2"></textarea>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">الملاحظات:
+                                                                <span>*</span></label>
+                                                            <textarea placeholder="الملاحظات" name="" class="form-control" rows="2"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- source of lagna section -->
+                                                <div class="as-vertical-tab-content ">
+                                                    <div class="row">
+                                                        <div class="col-6 mbsm">
+                                                            <div><label for="" class="col-form-label">مصدر
+                                                                    اللجنة:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control">
+                                                                    <option>تكليف داخلي
+                                                                    </option>
+                                                                    <option value="1">تكليف
+                                                                        داخلي</option>
+                                                                    <option value="1">هيئة
+                                                                        الخبراء</option>
+                                                                    <option value="1">مجلس منطقة
+                                                                        القسيم</option>
+                                                                    <option value="1">مجلس منطقة
+                                                                        الرياض</option>
+                                                                    <option value="1">هيئة تطوير
+                                                                        منطقة عسير</option>
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-6 mbsm">
+                                                            <div><label for="" class="col-form-label">رقم
+                                                                    التكليف:
+                                                                    <span>*</span></label>
+                                                            </div>
+
+                                                            <input type="text" name="" class="form-control" placeholder="رقم التكليف">
+                                                        </div>
+
+
+                                                        <div class="col-6 mbsm">
+                                                            <div><label for="" class="col-form-label">رقم
+                                                                    الصادر:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+
+                                                            <input type="text" name="" class="form-control" placeholder="رقم الصادر">
+                                                        </div>
+
+                                                        <div class="col-6 mbsm">
+                                                            <div><label for="" class="col-form-label">رقم
+                                                                    الوارد
+                                                                    :
+                                                                    <span>*</span></label>
+                                                            </div>
+
+                                                            <input type="text" name="" class="form-control" placeholder="رقم الوارد">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="check d-flex align-items-center ">
+                                                                <input class="check-lagna" type="checkbox">
+                                                                <h4 class="mrsm sub-title">
+                                                                    لجنة منبثقة
+                                                                </h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 hidden-lagna">
+                                                            <div class="row">
+                                                                <div class="col-7">
+                                                                    <div><label for="" class="col-form-label">اسم
+                                                                            اللجنة المنبثق
+                                                                            منها:
+                                                                            <span
+                                                                                class="required">*</span></label>
+                                                                    </div>
+                                                                    <div class="bordered scroll">
+                                                                        <div class="geha-name">
+                                                                            <ul class="gehat list-unstyled">
+                                                                                <li>
+                                                                                    <input type="checkbox">
+                                                                                    <i class="fas fa-folder-open"></i> لجنة دراسة تنمية البيئة للقسيم
+                                                                                    <ul class="list-unstyled first-level">
+                                                                                        <li class="has-children">
+                                                                                            <i class="fas fa-folder-open"></i> لجنة تطوير وتحسين استخدام الحدائق للقسيم
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <input type="checkbox">
+                                                                                            <i class="fas fa-folder-open"></i> لجنة تطوير وتحسين التلوث البيئي للقسيم
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <input type="checkbox">
+                                                                                    <i class="fas fa-folder-open"></i> لجنة رفع كفاءة وتشغيل المواصلات العامة في القسيم
+
+                                                                                </li>
+                                                                                <li>
+                                                                                    <input type="checkbox">
+                                                                                    <i class="fas fa-folder-open"></i> لجنة تحسين المنشآت العامة للقسيم
+
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- date section -->
+                                                <div class="as-vertical-tab-content ">
+                                                    <div class="row">
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">تاريخ
+                                                                بداية
+                                                                اللجنة :
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <input type="text" class="form-control selector" readonly>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">تاريخ
+                                                                نهاية
+                                                                اللجنة :
+                                                                <span>*</span></label>
+                                                            <input type="text" class="form-control selector" readonly>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">دورية
+                                                                الانعقاد:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                    <option>يومية
+                                                                    </option>
+                                                                    <option value="">اسبوعية
+                                                                    </option>
+                                                                    <option value=""> شهرية
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <label for="" class="col-form-label">مدة
+                                                                اللجنة:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                            <option>حسب الحاجة
+                                                                            </option>
+                                                                            <option value="">مدة ثابتة
+                                                                            </option>
+                                                                            <option value="">الاعتماد علي النظام
+                                                                            </option>
+                                                                            <option>دائمة
+                                                                            </option>
+                                                                        </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- wazeer data section -->
+                                                <div class="as-vertical-tab-content ">
+                                                    <div class="row">
+                                                        <div class="mbsm col-md-6 col-12">
+                                                            <label for="" class="col-form-label">صفة
+                                                                الوزارة :
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                    <option>رئاسة
+                                                                    </option>
+                                                                    <option value="">مشاركة
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mbsm col-md-6 col-12">
+                                                            <label for="" class="col-form-label">دور
+                                                                الوزير :
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                    <option value="">رئيس
+                                                                    </option>
+                                                                    <option>عضو مجلس ادارة/option>
+                                                                    <option>عضو</option>
+                                                                    <option>بدون</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mbsm col-md-6 col-12">
+                                                            <label for="" class="col-form-label">حالة
+                                                                حضور
+                                                                الوزير:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                    <option>بنفسه </option>
+                                                                    <option value=""> نائب عن
+                                                                        الوزير
+                                                                    </option>
+                                                                    <option value=""> مساعد
+                                                                        الوزير
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mbsm col-md-6 col-12">
+                                                            <label for="" class="col-form-label">صفة
+                                                                الوزير:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                    <option> صفة الوزير
+                                                                    </option>
+                                                                    <option value="">صفة
+                                                                        اعتبارية
+                                                                    </option>
+                                                                    <option value="">صفة شخصية
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="mbsm col-md-6 col-12">
+                                                            <label for="" class="col-form-label">
+                                                                درجة
+                                                                المشاركة:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control" id="">
+                                                                    <option>سمو</option>
+                                                                    <option>معالي</option>
+                                                                    <option>سعادة</option>
+                                                                    <option>بدون</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- goals of lagna section -->
+                                                <div class="as-vertical-tab-content ">
+                                                    <div class="row">
+                                                        <div class="mbsm col-7">
+                                                            <label for="" class="col-form-label">
+                                                                الهدف:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                            <input type="text" name="" class="form-control" placeholder="إسم الهدف">
+                                                        </div>
+
+                                                        <div class="mbsm col-4">
+                                                            <label for="" class="col-form-label">تاريخ
+                                                                الهدف :
+                                                            </label>
+                                                            <input type="text" class="form-control selector" readonly>
+                                                        </div>
+
+                                                        <div class="mbsm col-11">
+                                                            <label for="" class="col-form-label">الوصف:
+                                                                <span>*</span></label>
+                                                            <input type="text" name="" class="form-control" placeholder="وصف الهدف">
+                                                        </div>
+                                                        <div class="mtmd text-left col-11">
+                                                            <button type="button" class="btn btn-wide btn-primary">إضافة</button>
+                                                        </div>
+
+                                                        <div class="col-11 pllg">
+                                                            <h6 class="sub-title">الأهداف
+                                                            </h6>
+                                                            <div class="table-responsive mtmd">
+                                                                <table class="gehat js-datatable table table-striped table-borderless table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>الهدف</th>
+                                                                            <th>الوصف</th>
+                                                                            <th>تاريخ الهفدف
+                                                                            </th>
+                                                                            <th> حذف</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>جهة شئون البيئة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>جهة شئون البيئة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>11/10/1441
+                                                                            </td>
+                                                                            <td><button data-toggle="modal" data-target="#staticBackdrop">
+                                                                                    <i
+                                                                                        class="far fa-trash-alt"></i></button>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td>وكالة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>وكالة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>11/10/1441
+                                                                            </td>
+                                                                            <td> <button data-toggle="modal" data-target="#staticBackdrop">
+                                                                                    <i
+                                                                                        class="far fa-trash-alt"></i></button>
+                                                                            </td>
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td>جهة شئون البيئة التابعة
+
+                                                                            </td>
+                                                                            <td>جهة شئون البيئة التابعة
+                                                                            </td>
+                                                                            <td>11/10/1441
+                                                                            </td>
+                                                                            <td> <button data-toggle="modal" data-target="#staticBackdrop">
+                                                                                    <i
+                                                                                        class="far fa-trash-alt"></i></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- mentors of lagna -->
+                                                <div class="as-vertical-tab-content  pllg">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h4 class="sub-title">اضافة مراقب علي اللجنة
+                                                            </h4>
+                                                        </div>
+                                                        <div class="mbsm col-6">
+                                                            <div>
+                                                                <label for="" class="col-form-label">
+                                                                    اللجنة:
+                                                                    <span
+                                                                        class="required">*</span></label>
+
+                                                                <div class="select-wrapper">
+                                                                    <select name="" class="form-control">
+                                                                        <option value="1">هيئة
+                                                                            الخبراء</option>
+                                                                        <option value="1">مجلس
+                                                                            منطقة القسيم
+                                                                        </option>
+                                                                        <option value="1">مجلس
+                                                                            منطقة الرياض
+                                                                        </option>
+                                                                        <option value="1">هيئة
+                                                                            تطوير منطقة عسير
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div>
+                                                                <label for="" class="col-form-label">
+                                                                    ملاحظة:
+                                                                    <span>*</span></label>
+
+                                                                <textarea placeholder="ملاحظة" name="" class="form-control" rows="2"></textarea>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="mbsm col-6">
+                                                            <div><label for="" class="col-form-label">
+                                                                    اسم
+                                                                    الجهة:
+                                                                    <span
+                                                                        class="required">*</span></label>
+                                                            </div>
+                                                            <div class="bordered scroll">
+                                                                <div class="geha-name">
+                                                                    <ul class="gehat list-unstyled">
+                                                                        <li>
+                                                                            <input type="checkbox">
+                                                                            <i class="fas fa-folder-open"></i> جهة شئون البيئة التابعة للوزارة
+                                                                            <ul class="list-unstyled first-level">
+                                                                                <li class="has-children">
+                                                                                    <input type="checkbox">
+                                                                                    <i class="fas fa-folder-open"></i> جهة شقيقة1
+                                                                                    <ul class="list-unstyled second-level">
+                                                                                        <li>
+                                                                                            <input type="checkbox">
+                                                                                            <i class="fas fa-folder-open"></i> جهة1
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <input type="checkbox">
+                                                                                            <i class="fas fa-folder-open"></i> جهة2
+                                                                                        </li>
+                                                                                        <li>
+                                                                                            <input type="checkbox">
+                                                                                            <i class="fas fa-folder-open"></i> جهة3
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <input type="checkbox">
+                                                                                    <i class="fas fa-folder-open"></i> جهة
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="checkbox">
+                                                                            <i class="fas fa-folder-open"></i> جهة شئون الوزارة
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="checkbox">
+                                                                            <i class="fas fa-folder-open"></i> جهة شئون العاملين
+                                                                        </li>
+                                                                        <li>
+                                                                            <input type="checkbox">
+                                                                            <i class="fas fa-folder-open"></i> جهة شئون العاملين
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-12">
+                                                            <div class="text-left">
+                                                                <button class="btn btn-primary btn-wide">اضافة</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <h4 class="sub-title">المراقبين علي اللجنة
+                                                            </h4>
+                                                            <div class="table-responsive mtmd">
+                                                                <table class="gehat js-datatable table table-striped table-borderless table-hover">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>اسم الجهة
+                                                                            </th>
+                                                                            <th>اللجنة </th>
+                                                                            <th>ملاحظات
+                                                                            </th>
+                                                                            <th> حذف</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>جهة شئون البيئة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>لجنة التحول الوطني
+                                                                            </td>
+                                                                            <td>-</td>
+                                                                            <td> <button data-toggle="modal" data-target="#staticBackdrop">
+                                                                                    <i
+                                                                                        class="far fa-trash-alt"></i></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>جهة شئون البيئة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>لجنة تطوير كفاءة الاداء
+                                                                            </td>
+                                                                            <td>-</td>
+                                                                            <td> <button data-toggle="modal" data-target="#staticBackdrop">
+                                                                                    <i
+                                                                                        class="far fa-trash-alt"></i></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>جهة شئون البيئة التابعة للوزارة
+                                                                            </td>
+                                                                            <td>لجنة المتابعة والانجاز
+                                                                            </td>
+                                                                            <td>-</td>
+                                                                            <td> <button data-toggle="modal" data-target="#staticBackdrop">
+                                                                                    <i
+                                                                                        class="far fa-trash-alt"></i></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-12">
+                                                <div class="mtlg text-left">
+                                                    <button class="btn btn-wide btn-primary-reverse">حفظ</button>
+
+                                                    <button type="button" name="next" class="next btn btn-wide btn btn-wide btn-primary">التالي</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="aligned-container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <div class="row">
+                                                    <div class="col-8 col-md-4">
+                                                        <h6 class="sub-title">إضافة جهة</h6>
+                                                        <div><label for="" class="col-form-label">
+                                                                نوع
+                                                                الجهة:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="select-wrapper">
+                                                            <select name="" class="form-control">
+
+                                                                <option>وزارة</option>
+                                                                <option>ادارة</option>
+                                                                <option>وكالة</option>
+                                                                <option>مجلس منطقة</option>
+                                                                <option>هيئة تطوير منطقة
+                                                                </option>
+                                                                <option>جهة شقيقة</option>
+                                                                <option>هيئة خبراء</option>
+                                                            </select>
+                                                        </div>
+                                                        <div><label for="" class="col-form-label">
+                                                                اسم
+                                                                الجهة:
+                                                                <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+
+                                                        <div class="bordered scroll">
+                                                            <div class="geha-name">
+                                                                <ul class="gehat list-unstyled">
+                                                                    <li>
+                                                                        <input type="checkbox">
+                                                                        <i class="fas fa-folder-open"></i> جهة شئون البيئة التابعة للوزارة
+                                                                        <ul class="list-unstyled first-level">
+                                                                            <li class="has-children">
+                                                                                <input type="checkbox">
+                                                                                <i class="fas fa-folder-open"></i> جهة شقيقة1
+                                                                                <ul class="list-unstyled second-level">
+                                                                                    <li>
+                                                                                        <input type="checkbox">
+                                                                                        <i class="fas fa-folder-open"></i> جهة1
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <input type="checkbox">
+                                                                                        <i class="fas fa-folder-open"></i> جهة2
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <input type="checkbox">
+                                                                                        <i class="fas fa-folder-open"></i> جهة3
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </li>
+                                                                            <li>
+                                                                                <input type="checkbox">
+                                                                                <i class="fas fa-folder-open"></i> جهة
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox">
+                                                                        <i class="fas fa-folder-open"></i> جهة شئون الوزارة
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox">
+                                                                        <i class="fas fa-folder-open"></i> جهة شئون العاملين
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="checkbox">
+                                                                        <i class="fas fa-folder-open"></i> جهة شئون العاملين
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="mbsm mtmd">
+                                                            <label for="" class="col-form-label">ملاحظات
+                                                                :
+                                                                <span>*</span></label>
+                                                            <textarea placeholder="ملاحظات" name="" class="form-control" rows="2"></textarea>
+                                                        </div>
+
+                                                        <div class="mtmd text-left">
+                                                            <button type="button" class="btn btn-wide btn-primary">إضافة</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-12 col-md-8 pllg">
+                                                        <h6 class="sub-title">الجهات المختارة
+                                                        </h6>
+                                                        <div class="table-responsive mtmd">
+                                                            <table class="gehat js-datatable table table-striped table-borderless table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>نوع الجهة </th>
+                                                                        <th>اسم الجهة</th>
+                                                                        <th> حذف</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+
+                                                                    <tr>
+                                                                        <td>جهة شئون البيئة التابعة للوزارة
+                                                                        </td>
+                                                                        <td>جهة شقيقة</td>
+                                                                        <td> <button data-toggle="modal" data-target="#staticBackdrop"><i
+                                                                                    class="far fa-trash-alt"></i></button>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td>جهة شئون البيئة التابعة للوزارة
+                                                                        </td>
+                                                                        <td>جهة شقيقة</td>
+                                                                        <td> <button data-toggle="modal" data-target="#staticBackdrop"><i
+                                                                                    class="far fa-trash-alt"></i></button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>جهة شئون البيئة التابعة للوزارة
+                                                                        </td>
+                                                                        <td>وكالة</td>
+                                                                        <td> <button data-toggle="modal" data-target="#staticBackdrop"><i
+                                                                                    class="far fa-trash-alt"></i></button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mtlg text-left">
+                                                    <button type="button" name="previous" class="previous btn btn-wide btn-gray">السابق</button>
+                                                    <button class="btn btn-wide btn-primary-reverse">حفظ</button>
+                                                    <button type="button" name="next" class="next btn btn-wide btn-primary">التالي</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="aligned-container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <div class="row">
+                                                    <div class="col-8 col-md-4">
+                                                        <h6 class="sub-title">إضافة عضو</h6>
+                                                        <div class="mbsm">
+                                                            <label for="" class="col-form-label">اسم
+                                                                الجهة :
+                                                                <span>*</span></label>
+                                                            <input type="text" name="" class="form-control disabled-input mbsm" placeholder="جهة شئون البيئة">
+                                                        </div>
+
+                                                        <div class="mbsm">
+                                                            <label for="" class="col-form-label">اسم
+                                                                العضو :
+                                                                <span>*</span></label>
+
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control">
+                                                                    <option value="2">
+                                                                        ابراهيم
+                                                                        سليمان
+                                                                    </option>
+
+                                                                    <option value="2">
+                                                                        فهد
+                                                                        بكار
+                                                                    </option>
+                                                                    <option>عمر محمد
+                                                                    </option>
+                                                                    <option>مصطفي سليمان
+                                                                    </option>
+                                                                    <option>مصطفي اسماعيل
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="mbsm">
+                                                            <label for="" class="col-form-label">الدور:
+                                                                <span>*</span></label>
+
+                                                            <div class="select-wrapper">
+                                                                <select name="" class="form-control">
+                                                                    <option value="2">
+                                                                        رئيس
+                                                                    </option>
+
+                                                                    <option value="2">
+                                                                        عضو
+                                                                    </option>
+
+                                                                    <option value="2">
+                                                                        بدون
+                                                                    </option>
+
+                                                                    <option value="2">
+                                                                        عضو
+                                                                        مجلس
+                                                                        ادارة
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mtmd text-left">
+                                                            <button type="button" class="btn btn-wide btn-primary">إضافة</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-8 pllg">
+                                                        <h6 class="sub-title">الاعضاء المختارة
+                                                        </h6>
+                                                        <div class="table-responsive mtmd">
+                                                            <table class="gehat js-datatable table table-striped table-borderless table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>اسم العضو</th>
+                                                                        <th>الدور</th>
+                                                                        <th> اسم الجهة</th>
+                                                                        <th> السيرة الذاتية
+                                                                        </th>
+                                                                        <th>حذف</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>احمد سليمان</td>
+                                                                        <td> عضو</td>
+                                                                        <td>جهة شئون البيئة التابعة للوزارة
+                                                                        </td>
+                                                                        <td> <a href="">cv1</a>
+                                                                        </td>
+                                                                        <td> <button data-toggle="modal" data-target="#staticBackdrop"><i
+                                                                                    class="far fa-trash-alt"></i></button>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>فهد بكار </td>
+                                                                        <td> عضو</td>
+                                                                        <td>جهة 2</td>
+                                                                        <td> <a href="">cv2</a>
+                                                                        </td>
+                                                                        <td> <button data-toggle="modal" data-target="#staticBackdrop"><i
+                                                                                    class="far fa-trash-alt"></i></button>
+                                                                        </td>
+
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td> ابراهيم معتز
+                                                                        </td>
+                                                                        <td> عضو</td>
+                                                                        <td>جهة شئون البيئة
+                                                                        </td>
+                                                                        <td> <a href="">cv3</a>
+                                                                        </td>
+                                                                        <td> <button data-toggle="modal" data-target="#staticBackdrop"><i
+                                                                                    class="far fa-trash-alt"></i></button>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mtlg text-left">
+                                                    <button type="button" name="previous" class="previous btn btn-wide btn-gray">السابق</button>
+                                                    <button class="btn btn-wide btn-primary-reverse">حفظ</button>
+                                                    <button type="button" name="next" class="next btn btn-wide btn-primary">التالي</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset class="aligned-container">
+                                        <div class="row">
+                                            <div class="col-7">
+                                                <div class=" ">
+                                                    <div class="bgGray ml-5 mb-1 col-12">
+                                                        <label for="" class="col-form-label w-25">اسم
+                                                            اللجنة
+                                                            :</label>
+                                                        <span>لجنة انشاء مترو الرياض وتطوير
+                                                            المرافق
+                                                            المحيطة</span>
+                                                    </div>
+
+                                                    <div class="ml-5 mb-1 col-12 ">
+                                                        <div class="row">
+                                                            <div class="col-3" style="white-space: nowrap;">
+                                                                <label for="" class="col-form-label w-25">وصف
+                                                                    اللجنة
+                                                                    :</label>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <span>تهدف اللجنة الي رسم
+                                                                    وتطوير
+                                                                    السياسات وخطط
+                                                                    الدولة والموازنات وترشيد
+                                                                    وضبط
+                                                                    الانضباط
+                                                                    الحكومي</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="bgGray ml-5 mb-1 col-12">
+                                                        <label for="" class="col-form-label w-25">نوع
+                                                            اللجنة
+                                                            :</label>
+                                                        <span>لجنة وزارية</span>
+                                                    </div>
+
+                                                    <div class="ml-5 mb-1 col-12">
+                                                        <label for="" class="col-form-label w-25">رقم
+                                                            اللجنة
+                                                            :</label>
+                                                        <span>ER12344</span>
+                                                    </div>
+
+                                                    <div class="bgGray ml-5 mb-1 col-12">
+                                                        <label for="" class="col-form-label w-25">تاريخ
+                                                            بداية اللجنة
+                                                            :</label>
+                                                        <span>11/4/1441</span>
+                                                    </div>
+
+                                                    <div class="ml-5 mb-1 col-12">
+                                                        <label for="" class="col-form-label w-25">تاريخ
+                                                            نهاية اللجنة
+                                                            :</label>
+                                                        <span>11/4/1441</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 ">
+                                                <div>
+                                                    <h5 class="title py-3">تحميل النموذج
+                                                    </h5>
+                                                    <div class="file file-download w-100">
+                                                        <span class="filename file-colored">docx.
+                                                            ملف</span>
+                                                        <span class="text-upper">حجم الملف:
+                                                            243
+                                                            ك.ب</span>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <h5 class="title py-3">استخراج الخطاب
+                                                        <span class="hint pr-2">(يجب
+                                                            ارفاق الخطاب قبل
+                                                            انشاء اللجنة)</span>
+                                                    </h5>
+
+                                                    <div id="fileinputWrap">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="file file-link">
+                                                                    <div class="file-link-inner d-flex">
+                                                                        <div class="w-75 position-relative">
+                                                                            <p> drag & drop your files here or
+                                                                            </p>
+                                                                            <div class="fileinputWrap">
+                                                                                <span class="btn btn-gray fileinput-button">
+                                                                                    <span>choose
+                                                                                        file</span>
+                                                                                <input type="file" data-allowed=" jpg,pdf,doc,docx,rtf" name="files" multiple>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="w-25">
+                                                                            <i class="fas fa-folder-open fa-4x"></i>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="fileList row"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="mtlg text-left">
+                                                    <button type="button" name="previous" class="previous btn btn-wide btn-gray">السابق</button>
+                                                    <button onclick="location.href='cmt_lagna_details.html'" type="button" class="btn btn-wide btn-primary">انشاء</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="section ptsm">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between">
+                <h1 class="title">اللجان</h1>
+                <div class="form-inline d-flex justify-content-end">
+                    <div>
+                        <div class="select-wrapper">
+                            <select name="" class="form-control" id="">
+                       <option>جميع الحالات</option>
+                       <option value="">قيد الانشاء</option>
+                       <option value="">لم تبدأ</option>
+                       <option value="">قائمة</option>
+                       <option value="">متوقفة</option>
+                       <option value="">تم التأجيل</option>
+                       <option value="">قيد الغلق</option>
+                       <option value="">تم الاغلاق</option>
+                       <option value="">تم الضم</option>
+                       <option value="">ملغاة</option>
+                   </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="select-wrapper">
+                            <select name="" class="form-control" id="">
+                       <option>جميع التصنيفات</option>
+                       <option value="">لجان محلية</option>
+                       <option value="">لجان داخلية توجيهية</option>
+                       <option value="">لجان داخلية تنفيذية</option>
+                       <option value="">لجان مجلس الادارة</option>
+                       <option value="">لجان وزارية</option>
+                       <option value="">لجان برامج الرؤية</option>
+                       <option value="">لجان مجالس المناطق</option>
+                       <option value="">لجان هيئة الخبراء</option>
+                       <option value="">لجان هيئات التطوير</option>
+                   </select>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-wide " data-toggle="modal" data-target="#staticBackdrop2">إنشاء لجنة</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-responsive mtmd">
+                <table class="js-datatable table table-striped table-borderless table-hover">
+                    <thead>
+                        <tr>
+                            <th>الاهمية</th>
+                            <th width="100%">اسم اللجنة</th>
+                            <th>حالة اللجنة</th>
+                            <th>مدة اللجنة</th>
+                            <th>مصدر اللجنة</th>
+                            <th>تصنيف اللجنة</th>
+                            <th>سرية اللجنة</th>
+                            <th>تاريخ الانشاء</th>
+                            <th>اخر تحديث</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status yellow"></span> لم تبدأ</td>
+                            <td>دائمة</td>
+                            <td>مجلس الشئون</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status orange"></span> قيد الانشاء</td>
+                            <td>مؤقتة</td>
+                            <td>الديوان الملكي</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status green"></span> قائمة</td>
+                            <td>دائمة</td>
+                            <td>ههيئة الخبراء</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status important"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status pink"></span> قيد الاغلاق</td>
+                            <td>مؤقتة</td>
+                            <td>تكليف داخلي</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status gray"></span> متوقفة</td>
+                            <td>دائمة</td>
+                            <td>مجلس الشئون</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                        <tr>
+                            <td><span class="leggan-status regular"></span></td>
+                            <td>
+                                <div class="subject"><a href="cmt_lagna_details.html">لجنة التحول المدني</a></div>
+                            </td>
+                            <td><span class="leg-status red"></span> مغلقة</td>
+                            <td>مؤقتة</td>
+                            <td>تكليف داخلي</td>
+                            <td>توجيهية</td>
+                            <td>سرية</td>
+                            <td>25/8/1440</td>
+                            <td>25/8/1440</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-footer">
+                <div class="table-exports">
+                    <a href="#" id="excel" class="btn btn-default btn-sm"><i class="fas fa-file-excel"></i>&nbsp; تصدير إلي أكسيل</a>
+                    <a href="#" class="btn btn-default btn-sm"><i class="fas fa-file-word"></i>&nbsp; تصدير إلي ملف word</a>
+                </div>
+            </div>
+
+            <div class="mtlg flex">
+                <p><span class="leggan-status regular"></span>&nbsp; عادي</p>
+                &nbsp;&nbsp;&nbsp;
+                <p><span class="leggan-status important"></span>&nbsp; مهم</p>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+ 
+		<footer class="footer" id="footer">
+    <div class="container-fluid">
+        <div class="copyright">
+            جميع الحقوق محفوظة - مكتب إدارة اللجان 1442
+        </div>
+        <div class="prog-vision">
+            <div class="footer_logos clearfix">
+                <img src="images/icons/Icon awesome-user-alt.svg" alt="">
+                <img src="images/icons/calendar.svg" alt="">
+                <img src="images/icons/chart-line.svg" alt="">
+                <img src="images/icons/chart-pie.svg" alt="">
+                <img src="images/icons/building.svg" alt="">
+                <img src="images/icons/book.svg" alt="">
+                <img src="images/icons/phone-square.svg" alt="">
+                <img src="images/icons/balance-scale.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+	<script>
+		var lightBtn = document.getElementById('changeToLight');
+		var darkBtn = document.getElementById('changeToDark');
+	
+		var arLang = document.getElementById('arabicLang');
+		var enLang = document.getElementById('englishLang');
+	
+		var theme = localStorage.getItem('theme');
+		var lang = localStorage.getItem('lang');
+	
+		var logo = document.getElementsByClassName('logo')[0];
+		var overlay = document.getElementsByClassName('overlay')[0];
+	
+		if (lightBtn && darkBtn) {
+			if (theme === null || theme === 'root') {
+				lightBtn.style.display = 'none';
+				darkBtn.style.display = 'block';
+				logo.style.background = 'url("images/commColor.png") no-repeat 0 0';
+				overlay.style.background = 'rgba(22, 25, 39, 0)';
+			} else if (theme === 'dark') {
+				lightBtn.style.display = 'block';
+				darkBtn.style.display = 'none'
+				logo.style.background = 'url("images/commWhite.png") no-repeat 0 0';
+				overlay.style.background = 'rgba(22, 25, 39, 0.85)';
+			}
+		}
+	
+	
+		if (arLang && enLang) {
+			if (lang === null || lang === 'ar') {
+				enLang.style.display = 'none';
+				arLang.style.display = 'flex';
+			} else if (lang === 'en') {
+				enLang.style.display = 'flex';
+				arLang.style.display = 'none';
+			}
+		}
+	</script>
+
+		<!-- scripts -->
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<!-- <script src="./../js/bootstrap.bundle.js"></script> -->
+	
+	
+		<!--------------------- link js files here --------------------->
+		<script src="js/select2.js"></script>
+		<script src="js/bootstrap-clockpicker.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/jquery.gre.js"></script>
+		<script src="js/jquery-simple-tree-table.js"></script>
+		
+		<!-- time spinner -->
+		<script src="js/jquery-ui.js"></script>
+		<script src="js/moment.js"></script>
+		<script src="js/jquery-ui-timespinner.js"></script>
+		
+		<!-- calendar -->
+		<script src="js/main.js"></script>
+		<script src="js/locales-all.js"></script>
+		
+		<!-- datepicker -->
+		<script src="js/calendar/jquery.calendars.js"></script>
+		<script src="js/calendar/jquery.calendars.plus.js"></script>
+		<script src="js/calendar/jquery.plugin.js"></script>
+		<script src="js/calendar/jquery.calendars.picker.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic.js"></script>
+		<script src="js/calendar/jquery.calendars.islamic-ar.js"></script>
+		
+		<!-- charts -->
+		<script src="js/highcharts/proj4.js"></script>
+		<script src="js/highcharts/highcharts.js"></script>
+		<script src="js/highcharts/drilldown.js"></script>
+		<script src="js/highcharts/variable-pie.js"></script>
+		<script src="js/charts.js"></script>
+		<script src="js/jquery.multi-select.js"></script>
+		
+		<script src="js/script1.js"></script>
+		<script src="js/script.js"></script>
+</body>
+</html>
